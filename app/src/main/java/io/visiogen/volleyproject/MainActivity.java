@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("debug",error.toString());
+                ip.setText(error.toString());
             }
         });
 
